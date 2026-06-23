@@ -1,0 +1,23 @@
+{
+  "name": "cerebro",
+  "version": "0.1.0",
+  "description": "cérebro — hub de integração ClickUp + Supabase",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "clickup:ping": "tsx src/scripts/ping.ts",
+    "clickup:bootstrap": "tsx src/scripts/bootstrap.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
